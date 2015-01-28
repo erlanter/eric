@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>
+		A small Hello!!
+	</title>
+	<script>
+	window.onload=function(){
+			var image=new Image();
+			image.crossOrigin="anonymous";
+			image.src='C:/Users/user/Desktop/1.jpg';
+
+			image.onload=function(){
+				var canvas=document.getElementById('canvas');
+				var ctx=canvas.getContext('2d');
+				for(var i=0;i<imgData.data.length;i+=4){
+					imgData.data[i]=255-imgData.data[i];
+					imgData.data[i+1]=255-imgData.data[i];
+				}
+				ctx.putImageData(image,0,0);
+			}
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

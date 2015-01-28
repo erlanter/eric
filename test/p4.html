@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>
+		A small Hello!!
+	</title>
+	<script>
+		function person(name,isstudent){
+			this._name=name;
+			this._isstudent=isstudent;
+			this.hello=function(){
+				alert("HH, "+this._name+".");
+			};
+			this.isstudent=function(){
+				if(this._isstudent)
+					alert("yes");
+				else
+					alert("no");
+			}
+		}
+		var person=new person("SUM",true);
+	</script>
+</head>
+<body>
+	<h1>HI</hi>
+		<script>
+		alert("THis java in body");
+		</script>
+</body>
+</html>

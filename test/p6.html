@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>
+		A small Hello!!
+	</title>
+	<script>
+		window.onload=function(){
+			var image=new Image();
+
+			image.src='colorhouse.png';
+
+			image.onload=function(){
+				var canvas=document.getElementById('canvas');
+				var ctx=canvas.getContext('2d');
+				ctx.drawImage(image,0,0);
+			}
+		}
+	</script>
+</head>
+<body>
+	<canvas id="canvas" width="512" height="512">456
+	</canvas>
+</body>
+</html>
